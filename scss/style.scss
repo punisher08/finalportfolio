@@ -1,0 +1,13 @@
+@use 'custom';
+// auto include animations
+@use 'components/animations';
+@use 'components/buttons';
+// section list
+@use 'sections/banner';
+@use 'sections/navbar';
+@use 'sections/body';
+@use 'sections/bg_style';
+@use 'sections/services';
+@use 'sections/get-started';
+@use 'sections/portfolio';
+@use 'sections/footer';

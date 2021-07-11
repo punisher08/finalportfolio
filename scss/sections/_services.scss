@@ -1,0 +1,126 @@
+@use '../custom.scss' as *;
+@use '../components/mixins' as *;
+.services{
+    position: relative;
+    padding: 0 1rem;
+        &__content{
+            padding: 1rem;
+            margin-top: 5rem;
+        }
+        .icon{
+            font-size: 3em;
+            color:$primary;
+        }
+        &_pic{
+            max-width: 100%;
+        }
+        &__right{
+            padding: 2rem 2rem 0 2rem;
+            background: #060c21;
+            
+        }
+        .social-links{
+            .social-links-footer{
+                bottom: 0;
+                position: absolute;
+                @include media-breakpoint-down(md){
+                    position: relative;
+                }
+                i{
+                    color: $white;
+                    padding: 1rem;
+                }
+            }
+        }
+        .services_content{
+            .display-3--title{
+                font-size: 1.8rem;
+                text-transform: capitalize;
+                font-family: "Poppins", sans-serif;
+                display: inline-block;
+                // background-image: linear-gradient(to right, #004994, #00878a);
+                // background-image: linear-gradient(315deg,#89ff00,#00bcd4);
+                background-image: linear-gradient(315deg,#e91e63,#5d02ff);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            }
+            .rounded-pill,.service-btn1,.service-btn2,.service-btn3{
+                // position: relative;
+                // margin: 20px 0 0 0;
+                // padding: 10px 20px;
+                text-decoration: none;
+                border: 1px solid #fff;
+                // display:inline-block;
+                color: #fff;
+                transition: 0.5s;
+                transform: translateY(-50px);
+                opacity: 0;
+                // visibility: hidden;
+                &:hover{
+                     background: linear-gradient(315deg,#89ff00,#00bcd4);
+                }
+            }
+            
+            
+        }
+       .service1{
+           &:hover .service-btn1{
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(60px);
+           }
+           
+       }
+       .service2{
+        &:hover .service-btn2{
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(40px);
+           }
+       }
+       .service3{
+        &:hover .service-btn3{
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(40px);
+           }
+       }
+}
+.services__summary{
+    h3{
+        background-image:  linear-gradient(315deg,#89ff00,#00bcd4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+    }
+}
+
+
+.animation-element.slide-left {
+    opacity: 0;
+    transition-delay: 0.5s;
+    -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    -moz-transform: translate3d(-100px, 0px, 0px);
+    -webkit-transform: translate3d(-100px, 0px, 0px);
+    -o-transform: translate(-100px, 0px);
+    -ms-transform: translate(-100px, 0px);
+    transform: translate3d(-100px, 0px, 0px);
+  }
+  
+  .animation-element.slide-left.in-view {
+    opacity: 1;
+    transition-delay: 0.5s;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }

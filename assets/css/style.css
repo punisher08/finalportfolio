@@ -11833,7 +11833,7 @@ body {
 }
 .services .social-links .social-links-footer {
   bottom: 0;
-  position: absolute;
+/*   position: absolute; */
 }
 @media (max-width: 767.98px) {
   .services .social-links .social-links-footer {

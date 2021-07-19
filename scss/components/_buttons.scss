@@ -39,3 +39,24 @@
        
     }
 }
+.rounded-pill{
+    background: linear-gradient(315deg,#ff0057,#e64a19);
+    &:hover{
+        background: linear-gradient(315deg,#89ff00,#00bcd4);
+    }
+}
+.project-nav{
+    button{
+        margin: 0.7rem;
+        color: $white;
+        background: none;
+        @include media-breakpoint-down(md){
+            margin: 0.2rem;
+            padding: 5px;
+            color: #fff;
+            background: none;
+            font-size: 0.8rem;
+        }
+    }
+ 
+}

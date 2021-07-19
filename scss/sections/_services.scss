@@ -2,7 +2,8 @@
 @use '../components/mixins' as *;
 .services{
     position: relative;
-    padding: 0 1rem;
+    padding: 0;
+  
         &__content{
             padding: 1rem;
             margin-top: 5rem;
@@ -17,8 +18,13 @@
         &__right{
             padding: 2rem 2rem 0 2rem;
             background: #060c21;
+            margin-bottom: 2rem;
+            @include media-breakpoint-down(md){
+                margin-bottom: 2rem;
+            }
             
         }
+      
         .social-links{
             .social-links-footer{
                 bottom: 0;
@@ -124,3 +130,13 @@
     -ms-transform: translate(0px, 0px);
     transform: translate3d(0px, 0px, 0px);
   }
+  #animation-add{
+    // transition-delay: 0.1;
+    animation-delay: 4s;
+    animation:pulse 5s linear;
+}
+.services_mobile{
+    @include media-breakpoint-down(md){
+        padding: 2rem;
+    }
+}

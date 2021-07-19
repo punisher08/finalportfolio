@@ -13,7 +13,7 @@
 
     &__icon {
        width: 2rem;
-       stroke: $primary; 
+       stroke: white; 
        padding-top: 0.5rem;
 
        @include media-breakpoint-up(sm) {
@@ -34,7 +34,7 @@
             font-size: 1rem;
 
             @include media-breakpoint-up(sm) {
-                font-size: 1.4rem;
+                font-size: 1rem;
                }
 
         }
@@ -84,13 +84,17 @@
     li {
         margin-bottom: 0.5rem;
         text-decoration: none;
+        padding-right:1rem;
 
         a {
             color: $white;
             text-decoration: none;
 
             &:hover {
-                color: $primary;
+                background-image: linear-gradient(315deg,#e91e63,#5d02ff);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent
             }
         }
     }

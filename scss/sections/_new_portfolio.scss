@@ -1,0 +1,45 @@
+@use '../custom' as *;
+@use  '../components/mixins' as *;
+
+.portfoio-section{
+    color: #fff;
+    background-color: #060c21;
+    
+    .card-list{
+        padding: 3rem;
+        background: #060c21;
+        .col-md-4{
+            text-align: center;
+            background-color: #060c21;
+            &:hover{
+                animation: toggle-drop 1s forwards;
+            }
+            &:hover a{
+                visibility: visible;
+                animation: showbutton 1s forwards;
+            }
+            img{
+                margin-top: 2rem;  
+            }
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    visibility: hidden;
+                    font-size: 0.7rem;
+                  
+                    &:hover{
+                        background: linear-gradient(315deg,#ff0057,#e64a19);
+                        // background-image:  linear-gradient(315deg,#89ff00,#00bcd4);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: bold;
+                    }
+                }
+            
+        }
+
+    }
+}
+
